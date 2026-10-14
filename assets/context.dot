@@ -1,0 +1,24 @@
+digraph context {
+  graph [rankdir=TB, bgcolor="white", pad=.3, nodesep=.5, ranksep=.65, fontname="DejaVu Sans"];
+  node [shape=box, style="rounded,filled", fillcolor="#f3f6fb", color="#7893b7", fontname="DejaVu Sans", fontsize=12, margin=".18,.13"];
+  edge [fontname="DejaVu Sans", fontsize=10, color="#56769d"];
+  recruiter [label="Рекрутер\nСоздает задачу и утверждает список"];
+  client [label="Клиент\nЧитает утвержденный результат"];
+  admin [label="Администратор / аудитор\nСостояние, остановка, аудит"];
+  subgraph cluster_trust {
+    label="Доверенная сеть организации / локальная машина";
+    color="#56769d"; style=dashed; fontsize=13;
+    web [label="Интерфейс и API\nРоли + область клиента/проекта"];
+    workers [label="Оркестратор и исполнители\nКвоты, checkpoints, human approval"];
+    models [label="Модели на GPU\nMiniLM + Qwen3 4B"];
+    data [label="Данные и проверяемые артефакты\nSQLite / файлы / аудит"];
+    ats [label="ATS/CRM и справочники\nЦелевая интеграция через broker", style="rounded,dashed"];
+    web -> workers; workers -> models; workers -> data;
+    ats -> workers [label="разрешенное чтение", style=dashed];
+  }
+  recruiter -> web [label="вакансия, проверка"];
+  client -> web [label="готовый список"];
+  admin -> web [label="эксплуатация"];
+  note [label="Публичные AI-сервисы не используются\nВеса загружаются заранее, рабочий режим offline", fillcolor="white", color="white"];
+  data -> note [style=invis];
+}

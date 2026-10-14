@@ -1,0 +1,113 @@
+{
+  "gpu": "AMD Radeon RX 6900 XT",
+  "vram_bytes": 17163091968,
+  "torch": "2.6.0+rocm6.2.4",
+  "rocm": "6.2.41134-65d174c3e",
+  "load_seconds": 7.9019685399835,
+  "peak_allocated_bytes": 8192142848,
+  "peak_reserved_bytes": 8235515904,
+  "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "weights": [
+    {
+      "file": "model-00001-of-00003.safetensors",
+      "bytes": 3957900840,
+      "sha256": "75311d91bb08cf0b882913da464a1e722a31fb44db35208663487efb7a3d8ed6"
+    },
+    {
+      "file": "model-00002-of-00003.safetensors",
+      "bytes": 3987450520,
+      "sha256": "0b48adbb1f60e901153d91907ba11ce63bd4b8b584482e730f48808d055dfba1"
+    },
+    {
+      "file": "model-00003-of-00003.safetensors",
+      "bytes": 99630640,
+      "sha256": "7dd39ccca5e4de123c74c14af44c9bf2eb75df33b4614382af0134528e060d5d"
+    }
+  ],
+  "trials": [
+    {
+      "elapsed_seconds": 9.760944481997285,
+      "model_note": {
+        "name": "Qwen3-4B-Instruct-2507",
+        "sha256": "dfe2dcbfced31adc4c69c18d28d3dcbe63c53790ada156bb72a9ecbb27bb934c",
+        "device": "cuda",
+        "dtype": "float16",
+        "max_input_tokens": 3712,
+        "max_output_tokens": 384,
+        "max_context_tokens": 4096,
+        "attention": "eager",
+        "local_only": true,
+        "unverified": true,
+        "status": "ready",
+        "input_tokens": 230,
+        "output_tokens": 111,
+        "elapsed_seconds": 9.76
+      },
+      "drafts": [
+        {
+          "candidate_id": "r01",
+          "unverified": true,
+          "summary": "Опыт работы с Python, PostgreSQL, Docker, FastAPI, pytest и Redis. 6 лет опыта.",
+          "questions": [
+            "Как организуете тестирование в проектах на FastAPI?"
+          ]
+        },
+        {
+          "candidate_id": "r11",
+          "unverified": true,
+          "summary": "Опыт работы с Python, PostgreSQL, Docker, FastAPI, pytest и Redis. 6 лет опыта.",
+          "questions": [
+            "Как обеспечиваете масштабируемость сервисов на базе Docker и FastAPI?"
+          ]
+        }
+      ],
+      "scores_unchanged": true,
+      "evidence_unchanged": true
+    },
+    {
+      "elapsed_seconds": 10.362998172000516,
+      "model_note": {
+        "name": "Qwen3-4B-Instruct-2507",
+        "sha256": "dfe2dcbfced31adc4c69c18d28d3dcbe63c53790ada156bb72a9ecbb27bb934c",
+        "device": "cuda",
+        "dtype": "float16",
+        "max_input_tokens": 3712,
+        "max_output_tokens": 384,
+        "max_context_tokens": 4096,
+        "attention": "eager",
+        "local_only": true,
+        "unverified": true,
+        "status": "ready",
+        "input_tokens": 230,
+        "output_tokens": 111,
+        "elapsed_seconds": 10.362
+      },
+      "drafts": [
+        {
+          "candidate_id": "r01",
+          "unverified": true,
+          "summary": "Опыт работы с Python, PostgreSQL, Docker, FastAPI, pytest и Redis. 6 лет опыта.",
+          "questions": [
+            "Как организуете тестирование в проектах на FastAPI?"
+          ]
+        },
+        {
+          "candidate_id": "r11",
+          "unverified": true,
+          "summary": "Опыт работы с Python, PostgreSQL, Docker, FastAPI, pytest и Redis. 6 лет опыта.",
+          "questions": [
+            "Как обеспечиваете масштабируемость сервисов на базе Docker и FastAPI?"
+          ]
+        }
+      ],
+      "scores_unchanged": true,
+      "evidence_unchanged": true
+    }
+  ],
+  "all_valid": true,
+  "limitations": [
+    "Two synthetic prompts",
+    "JSON validity does not prove factual correctness",
+    "One GPU generation sequence"
+  ]
+}

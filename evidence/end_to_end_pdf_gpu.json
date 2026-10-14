@@ -1,0 +1,46 @@
+{
+  "status": "waiting",
+  "stage": 4,
+  "elapsed_seconds": 20.610955872980412,
+  "states": [
+    "created",
+    "running",
+    "waiting"
+  ],
+  "semantic": {
+    "aggregation": "0.5 mean chunk cosine + 0.5 max chunk cosine",
+    "device": "cuda",
+    "dtype": "float16",
+    "max_chunks": 32,
+    "max_tokens": 128,
+    "mode": "semantic",
+    "name": "paraphrase-multilingual-MiniLM-L12-v2",
+    "pooling": "attention-mask mean",
+    "protected_attributes_used": false,
+    "semantic_bonus_max": 5,
+    "sha256": "20ad9268ff0051033edd9810250341fb0291486f236f2826a6c4e756f9c6ed67"
+  },
+  "llm": {
+    "attention": "eager",
+    "device": "cuda",
+    "dtype": "float16",
+    "elapsed_seconds": 9.478,
+    "input_tokens": 230,
+    "local_only": true,
+    "max_context_tokens": 4096,
+    "max_input_tokens": 3712,
+    "max_output_tokens": 384,
+    "name": "Qwen3-4B-Instruct-2507",
+    "output_tokens": 111,
+    "sha256": "dfe2dcbfced31adc4c69c18d28d3dcbe63c53790ada156bb72a9ecbb27bb934c",
+    "status": "ready",
+    "unverified": true
+  },
+  "candidate_count": 8,
+  "all_have_questions": true,
+  "draft_count": 2,
+  "human_approval_required": true,
+  "passed": true,
+  "input_format": "pdf",
+  "pdf_resume_count": 11
+}

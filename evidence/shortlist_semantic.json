@@ -1,0 +1,549 @@
+{
+  "normalized_vacancy": {
+    "id": "v-python",
+    "title": "Python backend-разработчик",
+    "description": "Разработка REST API внутренней платформы логистики. Нужны сервисы на Python, PostgreSQL, Docker, поддержка существующих интеграций и тестов.",
+    "must_have": [
+      "python",
+      "postgresql",
+      "docker"
+    ],
+    "nice_to_have": [
+      "fastapi",
+      "pytest",
+      "redis"
+    ],
+    "min_years": 3.0,
+    "top_k": 8,
+    "tenant_id": "agency-a",
+    "project_id": "alpha"
+  },
+  "candidates": [
+    {
+      "candidate_id": "r01",
+      "name": "Алексей Кленов",
+      "score": 100.0,
+      "matched_skills": [
+        "python",
+        "postgresql",
+        "docker",
+        "fastapi",
+        "pytest",
+        "redis"
+      ],
+      "missing_skills": [],
+      "experience_years": 6.0,
+      "evidence": [
+        {
+          "skill": "python",
+          "quote": "Создавал REST API на Python и FastAPI, проектировал таблицы PostgreSQL.",
+          "source": "resume:r01",
+          "status": "stated"
+        },
+        {
+          "skill": "postgresql",
+          "quote": "Создавал REST API на Python и FastAPI, проектировал таблицы PostgreSQL.",
+          "source": "resume:r01",
+          "status": "stated"
+        },
+        {
+          "skill": "docker",
+          "quote": "Сервисы упаковывал в Docker, написал тесты pytest.",
+          "source": "resume:r01",
+          "status": "stated"
+        },
+        {
+          "skill": "fastapi",
+          "quote": "Создавал REST API на Python и FastAPI, проектировал таблицы PostgreSQL.",
+          "source": "resume:r01",
+          "status": "stated"
+        },
+        {
+          "skill": "pytest",
+          "quote": "Сервисы упаковывал в Docker, написал тесты pytest.",
+          "source": "resume:r01",
+          "status": "stated"
+        },
+        {
+          "skill": "redis",
+          "quote": "Использовал Redis для кеша.",
+          "source": "resume:r01",
+          "status": "stated"
+        },
+        {
+          "skill": "experience",
+          "quote": "Опыт работы: 6 лет.",
+          "source": "resume:r01",
+          "status": "stated"
+        }
+      ],
+      "concerns": [],
+      "questions": [
+        "Приведите пример реальной задачи с python: каков был ваш личный вклад и как вы оценивали результат?",
+        "Приведите пример реальной задачи с postgresql: каков был ваш личный вклад и как вы оценивали результат?"
+      ],
+      "summary": "Подтверждено обязательных навыков: 3/3; желательных: 3/3. Стаж по резюме, лет: 6.",
+      "semantic_score": 0.737305,
+      "confidence": 1.0,
+      "score_components": {
+        "must": 75.0,
+        "nice": 15.0,
+        "experience": 10.0,
+        "semantic_bonus": 0.0
+      }
+    },
+    {
+      "candidate_id": "r11",
+      "name": "Алексей Кленов",
+      "score": 100.0,
+      "matched_skills": [
+        "python",
+        "postgresql",
+        "docker",
+        "fastapi",
+        "pytest",
+        "redis"
+      ],
+      "missing_skills": [],
+      "experience_years": 6.0,
+      "evidence": [
+        {
+          "skill": "python",
+          "quote": "Создавал REST API на Python и FastAPI, проектировал таблицы PostgreSQL.",
+          "source": "resume:r11",
+          "status": "stated"
+        },
+        {
+          "skill": "postgresql",
+          "quote": "Создавал REST API на Python и FastAPI, проектировал таблицы PostgreSQL.",
+          "source": "resume:r11",
+          "status": "stated"
+        },
+        {
+          "skill": "docker",
+          "quote": "Сервисы упаковывал в Docker, написал тесты pytest.",
+          "source": "resume:r11",
+          "status": "stated"
+        },
+        {
+          "skill": "fastapi",
+          "quote": "Создавал REST API на Python и FastAPI, проектировал таблицы PostgreSQL.",
+          "source": "resume:r11",
+          "status": "stated"
+        },
+        {
+          "skill": "pytest",
+          "quote": "Сервисы упаковывал в Docker, написал тесты pytest.",
+          "source": "resume:r11",
+          "status": "stated"
+        },
+        {
+          "skill": "redis",
+          "quote": "Использовал Redis для кеша.",
+          "source": "resume:r11",
+          "status": "stated"
+        },
+        {
+          "skill": "experience",
+          "quote": "Опыт работы: 6 лет.",
+          "source": "resume:r11",
+          "status": "stated"
+        }
+      ],
+      "concerns": [],
+      "questions": [
+        "Приведите пример реальной задачи с python: каков был ваш личный вклад и как вы оценивали результат?",
+        "Приведите пример реальной задачи с postgresql: каков был ваш личный вклад и как вы оценивали результат?"
+      ],
+      "summary": "Подтверждено обязательных навыков: 3/3; желательных: 3/3. Стаж по резюме, лет: 6.",
+      "semantic_score": 0.737305,
+      "confidence": 1.0,
+      "score_components": {
+        "must": 75.0,
+        "nice": 15.0,
+        "experience": 10.0,
+        "semantic_bonus": 0.0
+      }
+    },
+    {
+      "candidate_id": "r02",
+      "name": "Ирина Листова",
+      "score": 93.13,
+      "matched_skills": [
+        "python",
+        "postgresql",
+        "docker",
+        "pytest"
+      ],
+      "missing_skills": [],
+      "experience_years": 4.0,
+      "evidence": [
+        {
+          "skill": "python",
+          "quote": "Питон использовала для API и фоновых задач, основная БД postgres.",
+          "source": "resume:r02",
+          "status": "stated"
+        },
+        {
+          "skill": "postgresql",
+          "quote": "Питон использовала для API и фоновых задач, основная БД postgres.",
+          "source": "resume:r02",
+          "status": "stated"
+        },
+        {
+          "skill": "docker",
+          "quote": "Собирала Docker-образы, поддерживала миграции и Git.",
+          "source": "resume:r02",
+          "status": "stated"
+        },
+        {
+          "skill": "pytest",
+          "quote": "Работала с Django и REST; автоматизированные тесты писала в pytest.",
+          "source": "resume:r02",
+          "status": "stated"
+        },
+        {
+          "skill": "experience",
+          "quote": "Общий опыт: 4 года.",
+          "source": "resume:r02",
+          "status": "stated"
+        }
+      ],
+      "concerns": [],
+      "questions": [
+        "Приведите пример реальной задачи с python: каков был ваш личный вклад и как вы оценивали результат?",
+        "Приведите пример реальной задачи с postgresql: каков был ваш личный вклад и как вы оценивали результат?"
+      ],
+      "summary": "Подтверждено обязательных навыков: 3/3; желательных: 1/3. Стаж по резюме, лет: 4.",
+      "semantic_score": 0.625488,
+      "confidence": 0.714,
+      "score_components": {
+        "must": 75.0,
+        "nice": 5.0,
+        "experience": 10.0,
+        "semantic_bonus": 3.13
+      }
+    },
+    {
+      "candidate_id": "r03",
+      "name": "Михаил Ручьев",
+      "score": 88.1,
+      "matched_skills": [
+        "python",
+        "postgresql",
+        "docker"
+      ],
+      "missing_skills": [],
+      "experience_years": 5.0,
+      "evidence": [
+        {
+          "skill": "python",
+          "quote": "Основной стек Python, PostgreSQL, Docker.",
+          "source": "resume:r03",
+          "status": "stated"
+        },
+        {
+          "skill": "postgresql",
+          "quote": "Основной стек Python, PostgreSQL, Docker.",
+          "source": "resume:r03",
+          "status": "stated"
+        },
+        {
+          "skill": "docker",
+          "quote": "Основной стек Python, PostgreSQL, Docker.",
+          "source": "resume:r03",
+          "status": "stated"
+        },
+        {
+          "skill": "experience",
+          "quote": "Стаж: 5 лет.",
+          "source": "resume:r03",
+          "status": "stated"
+        }
+      ],
+      "concerns": [],
+      "questions": [
+        "Приведите пример реальной задачи с python: каков был ваш личный вклад и как вы оценивали результат?",
+        "Приведите пример реальной задачи с postgresql: каков был ваш личный вклад и как вы оценивали результат?"
+      ],
+      "summary": "Подтверждено обязательных навыков: 3/3; желательных: 0/3. Стаж по резюме, лет: 5.",
+      "semantic_score": 0.619141,
+      "confidence": 0.571,
+      "score_components": {
+        "must": 75.0,
+        "nice": 0.0,
+        "experience": 10.0,
+        "semantic_bonus": 3.1
+      }
+    },
+    {
+      "candidate_id": "r04",
+      "name": "Наталья Берестова",
+      "score": 88.04,
+      "matched_skills": [
+        "python",
+        "postgresql",
+        "docker"
+      ],
+      "missing_skills": [],
+      "experience_years": 3.0,
+      "evidence": [
+        {
+          "skill": "python",
+          "quote": "Python применяла для обработки событий, PostgreSQL - для транзакционных данных, Docker - для локального окружения.",
+          "source": "resume:r04",
+          "status": "stated"
+        },
+        {
+          "skill": "postgresql",
+          "quote": "Python применяла для обработки событий, PostgreSQL - для транзакционных данных, Docker - для локального окружения.",
+          "source": "resume:r04",
+          "status": "stated"
+        },
+        {
+          "skill": "docker",
+          "quote": "Python применяла для обработки событий, PostgreSQL - для транзакционных данных, Docker - для локального окружения.",
+          "source": "resume:r04",
+          "status": "stated"
+        },
+        {
+          "skill": "experience",
+          "quote": "Опыт работы: 3 года.",
+          "source": "resume:r04",
+          "status": "stated"
+        }
+      ],
+      "concerns": [],
+      "questions": [
+        "Приведите пример реальной задачи с python: каков был ваш личный вклад и как вы оценивали результат?",
+        "Приведите пример реальной задачи с postgresql: каков был ваш личный вклад и как вы оценивали результат?"
+      ],
+      "summary": "Подтверждено обязательных навыков: 3/3; желательных: 0/3. Стаж по резюме, лет: 3.",
+      "semantic_score": 0.60791,
+      "confidence": 0.571,
+      "score_components": {
+        "must": 75.0,
+        "nice": 0.0,
+        "experience": 10.0,
+        "semantic_bonus": 3.04
+      }
+    },
+    {
+      "candidate_id": "r07",
+      "name": "Сергей Тальников",
+      "score": 87.73,
+      "matched_skills": [
+        "python",
+        "postgresql",
+        "docker",
+        "fastapi",
+        "redis"
+      ],
+      "missing_skills": [],
+      "experience_years": null,
+      "evidence": [
+        {
+          "skill": "python",
+          "quote": "Backend Python.",
+          "source": "resume:r07",
+          "status": "stated"
+        },
+        {
+          "skill": "postgresql",
+          "quote": "Разрабатывал REST-сервисы на FastAPI и хранил данные в PostgreSQL.",
+          "source": "resume:r07",
+          "status": "stated"
+        },
+        {
+          "skill": "docker",
+          "quote": "Использовал Docker, Redis, Git.",
+          "source": "resume:r07",
+          "status": "stated"
+        },
+        {
+          "skill": "fastapi",
+          "quote": "Разрабатывал REST-сервисы на FastAPI и хранил данные в PostgreSQL.",
+          "source": "resume:r07",
+          "status": "stated"
+        },
+        {
+          "skill": "redis",
+          "quote": "Использовал Docker, Redis, Git.",
+          "source": "resume:r07",
+          "status": "stated"
+        }
+      ],
+      "concerns": [
+        "Продолжительность профессионального опыта не подтверждена."
+      ],
+      "questions": [
+        "Каков ваш общий профессиональный стаж? Уточните даты и пересекающиеся периоды работы.",
+        "Приведите пример реальной задачи с python: каков был ваш личный вклад и как вы оценивали результат?",
+        "Приведите пример реальной задачи с postgresql: каков был ваш личный вклад и как вы оценивали результат?"
+      ],
+      "summary": "Подтверждено обязательных навыков: 3/3; желательных: 2/3. Стаж неизвестен.",
+      "semantic_score": 0.546875,
+      "confidence": 0.714,
+      "score_components": {
+        "must": 75.0,
+        "nice": 10.0,
+        "experience": 0.0,
+        "semantic_bonus": 2.73
+      }
+    },
+    {
+      "candidate_id": "r10",
+      "name": "Марина Соснова",
+      "score": 61.39,
+      "matched_skills": [
+        "postgresql",
+        "docker"
+      ],
+      "missing_skills": [
+        "python"
+      ],
+      "experience_years": 5.0,
+      "evidence": [
+        {
+          "skill": "python",
+          "quote": "No experience with Python.",
+          "source": "resume:r10",
+          "status": "negated"
+        },
+        {
+          "skill": "postgresql",
+          "quote": "Java, Spring Boot, PostgreSQL, Docker, Kafka.",
+          "source": "resume:r10",
+          "status": "stated"
+        },
+        {
+          "skill": "docker",
+          "quote": "Java, Spring Boot, PostgreSQL, Docker, Kafka.",
+          "source": "resume:r10",
+          "status": "stated"
+        },
+        {
+          "skill": "experience",
+          "quote": "Опыт работы: 5 лет.",
+          "source": "resume:r10",
+          "status": "stated"
+        }
+      ],
+      "concerns": [
+        "В резюме явно отрицается опыт с python."
+      ],
+      "questions": [
+        "Расскажите о практическом использовании python; подтверждение обязательного навыка отсутствует.",
+        "Приведите пример реальной задачи с postgresql: каков был ваш личный вклад и как вы оценивали результат?",
+        "Приведите пример реальной задачи с docker: каков был ваш личный вклад и как вы оценивали результат?"
+      ],
+      "summary": "Подтверждено обязательных навыков: 2/3; желательных: 0/3. Стаж по резюме, лет: 5.",
+      "semantic_score": 0.417969,
+      "confidence": 0.429,
+      "score_components": {
+        "must": 50.0,
+        "nice": 0.0,
+        "experience": 10.0,
+        "semantic_bonus": 1.39
+      }
+    },
+    {
+      "candidate_id": "r05",
+      "name": "Егор Долин",
+      "score": 60.31,
+      "matched_skills": [
+        "python",
+        "postgresql",
+        "fastapi"
+      ],
+      "missing_skills": [
+        "docker"
+      ],
+      "experience_years": 1.0,
+      "evidence": [
+        {
+          "skill": "python",
+          "quote": "Пишу скрипты на Python, делал небольшой сервис FastAPI.",
+          "source": "resume:r05",
+          "status": "stated"
+        },
+        {
+          "skill": "postgresql",
+          "quote": "PostgreSQL изучал в учебном проекте.",
+          "source": "resume:r05",
+          "status": "stated"
+        },
+        {
+          "skill": "docker",
+          "quote": "Не работал с Docker.",
+          "source": "resume:r05",
+          "status": "negated"
+        },
+        {
+          "skill": "fastapi",
+          "quote": "Пишу скрипты на Python, делал небольшой сервис FastAPI.",
+          "source": "resume:r05",
+          "status": "stated"
+        },
+        {
+          "skill": "experience",
+          "quote": "Опыт работы: 1 год.",
+          "source": "resume:r05",
+          "status": "stated"
+        }
+      ],
+      "concerns": [
+        "В резюме явно отрицается опыт с docker.",
+        "Заявленный стаж 1 лет меньше требования 3 лет."
+      ],
+      "questions": [
+        "Расскажите о практическом использовании docker; подтверждение обязательного навыка отсутствует.",
+        "Есть ли дополнительный релевантный опыт, не отраженный в резюме?",
+        "Приведите пример реальной задачи с python: каков был ваш личный вклад и как вы оценивали результат?",
+        "Приведите пример реальной задачи с postgresql: каков был ваш личный вклад и как вы оценивали результат?"
+      ],
+      "summary": "Подтверждено обязательных навыков: 2/3; желательных: 1/3. Стаж по резюме, лет: 1.",
+      "semantic_score": 0.594727,
+      "confidence": 0.571,
+      "score_components": {
+        "must": 50.0,
+        "nice": 5.0,
+        "experience": 3.33,
+        "semantic_bonus": 1.98
+      }
+    }
+  ],
+  "duplicates": [
+    {
+      "candidate_ids": [
+        "r01",
+        "r11"
+      ],
+      "reason": "Совпадает email; возможный дубль личности, записи не объединены."
+    },
+    {
+      "candidate_ids": [
+        "r01",
+        "r11"
+      ],
+      "reason": "Совпадает нормализованный текст резюме; записи не объединены."
+    }
+  ],
+  "warnings": [
+    "Балл отражает подтвержденные критерии вакансии; решение и проверка источников остаются за рекрутером.",
+    "Резюме вне tenant/project вакансии исключены из сравнения."
+  ],
+  "model": {
+    "mode": "semantic",
+    "name": "paraphrase-multilingual-MiniLM-L12-v2",
+    "device": "cuda",
+    "dtype": "float16",
+    "sha256": "20ad9268ff0051033edd9810250341fb0291486f236f2826a6c4e756f9c6ed67",
+    "max_tokens": 128,
+    "max_chunks": 32,
+    "pooling": "attention-mask mean",
+    "aggregation": "0.5 mean chunk cosine + 0.5 max chunk cosine",
+    "protected_attributes_used": false,
+    "semantic_bonus_max": 5
+  }
+}

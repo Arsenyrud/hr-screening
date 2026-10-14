@@ -1,0 +1,149 @@
+{
+  "mode": "semantic",
+  "repeats_per_vacancy": 5,
+  "dataset_sha256": "d3c6d8ec6c2b8733886976b442e0575d2d8830ff2dfc094a0e6467aa0ddf01c9",
+  "resumes": 32,
+  "vacancies": 3,
+  "hardware": {
+    "os": "Linux",
+    "kernel": "7.0.0-38-generic",
+    "cpu": "AMD Ryzen 9 5950X 16-Core Processor",
+    "cpu_count": 32,
+    "ram_bytes": 134953562112,
+    "python": "3.12.7",
+    "torch": "2.6.0+rocm6.2.4",
+    "rocm": "6.2.41134-65d174c3e",
+    "gpu": "AMD Radeon RX 6900 XT",
+    "vram_bytes": 17163091968
+  },
+  "cold_seconds": 4.274770272022579,
+  "warm_seconds": [
+    0.06518143200082704,
+    0.0628326699952595,
+    0.06273648794740438,
+    0.06308490398805588,
+    0.06263662601122633,
+    0.06106215697946027,
+    0.05800186301348731,
+    0.0576626859838143,
+    0.05801051203161478,
+    0.05812572501599789,
+    0.0558424029732123,
+    0.05287393002072349,
+    0.05366519303061068,
+    0.05239313101628795,
+    0.05234873003792018
+  ],
+  "p50_seconds": 0.05801051203161478,
+  "p95_seconds": 0.06308490398805588,
+  "p99_seconds": 0.06308490398805588,
+  "evaluations": [
+    {
+      "vacancy_id": "v-python",
+      "selected": [
+        "r01",
+        "r11",
+        "r02",
+        "r03",
+        "r04",
+        "r07",
+        "r10",
+        "r05"
+      ],
+      "relevant": [
+        "r01",
+        "r02",
+        "r03",
+        "r04",
+        "r11"
+      ],
+      "precision_at_k": 0.625,
+      "recall_at_k": 1.0,
+      "model": {
+        "mode": "semantic",
+        "name": "paraphrase-multilingual-MiniLM-L12-v2",
+        "device": "cuda",
+        "dtype": "float16",
+        "sha256": "20ad9268ff0051033edd9810250341fb0291486f236f2826a6c4e756f9c6ed67",
+        "max_tokens": 128,
+        "max_chunks": 32,
+        "pooling": "attention-mask mean",
+        "aggregation": "0.5 mean chunk cosine + 0.5 max chunk cosine",
+        "protected_attributes_used": false,
+        "semantic_bonus_max": 5
+      }
+    },
+    {
+      "vacancy_id": "v-analyst",
+      "selected": [
+        "r12",
+        "r13",
+        "r17",
+        "r15",
+        "r14",
+        "r19",
+        "r20",
+        "r18"
+      ],
+      "relevant": [
+        "r12",
+        "r13",
+        "r14",
+        "r15"
+      ],
+      "precision_at_k": 0.5,
+      "recall_at_k": 1.0,
+      "model": {
+        "mode": "semantic",
+        "name": "paraphrase-multilingual-MiniLM-L12-v2",
+        "device": "cuda",
+        "dtype": "float16",
+        "sha256": "20ad9268ff0051033edd9810250341fb0291486f236f2826a6c4e756f9c6ed67",
+        "max_tokens": 128,
+        "max_chunks": 32,
+        "pooling": "attention-mask mean",
+        "aggregation": "0.5 mean chunk cosine + 0.5 max chunk cosine",
+        "protected_attributes_used": false,
+        "semantic_bonus_max": 5
+      }
+    },
+    {
+      "vacancy_id": "v-frontend",
+      "selected": [
+        "r22",
+        "r23",
+        "r24",
+        "r25",
+        "r27",
+        "r30",
+        "r28",
+        "r26"
+      ],
+      "relevant": [
+        "r22",
+        "r23",
+        "r24",
+        "r25"
+      ],
+      "precision_at_k": 0.5,
+      "recall_at_k": 1.0,
+      "model": {
+        "mode": "semantic",
+        "name": "paraphrase-multilingual-MiniLM-L12-v2",
+        "device": "cuda",
+        "dtype": "float16",
+        "sha256": "20ad9268ff0051033edd9810250341fb0291486f236f2826a6c4e756f9c6ed67",
+        "max_tokens": 128,
+        "max_chunks": 32,
+        "pooling": "attention-mask mean",
+        "aggregation": "0.5 mean chunk cosine + 0.5 max chunk cosine",
+        "protected_attributes_used": false,
+        "semantic_bonus_max": 5
+      }
+    }
+  ],
+  "limitations": [
+    "Synthetic hand-authored labels, not an independent hiring quality study",
+    "No ATS integration or production SLA inferred"
+  ]
+}

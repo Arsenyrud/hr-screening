@@ -1,0 +1,38 @@
+digraph modules {
+  graph [rankdir=TB, bgcolor="white", pad=0.3, nodesep=0.35, ranksep=0.55, fontname="DejaVu Sans"];
+  node [shape=box, style="rounded,filled", fillcolor="#f2f6fb", color="#7893b7", fontname="DejaVu Sans", fontsize=12, margin="0.16,0.12"];
+  edge [color="#56769d", fontname="DejaVu Sans", fontsize=10, arrowsize=0.7];
+  ui [label="static/\nindex.html / app.js / style.css\nОчередь, панели, утверждение\nHTML / CSS / JavaScript"];
+  api [label="api.py\nHTTP, валидация, экспорт\nFastAPI / Pydantic / Uvicorn"];
+  auth [label="security.py\nПароли, сессии, роли\ntenant / project\nPBKDF2 / SHA-256 / Bearer"];
+  service [label="service.py\nОчередь, этапы, квоты\nПауза / отмена / checkpoint\nThreadPoolExecutor"];
+  store [label="store.py\nЗаписи, PDF, аудит, backup\nSQLite WAL / транзакции\nЦепочка SHA-256"];
+  documents [label="documents.py\nТекст PDF, страницы, SHA-256\npypdf / subprocess\nЛимиты CPU / RAM / времени"];
+  engine [label="engine.py\nНавыки, опыт, цитаты\nДубли и противоречия\nPython / правила / баллы"];
+  compute [label="compute.py\nОтдельный процесс\nProcessPoolExecutor / spawn"];
+  semantic [label="semantic.py\nВекторное сравнение\nMiniLM / FP16\nTransformers / PyTorch"];
+  llm [label="llm.py\nЧерновые пояснения и вопросы\nQwen3 4B / FP16\nПроверка JSON"];
+  gpu [label="AMD Radeon RX 6900 XT\n16 GiB, локальный инференс\nPyTorch 2.6 / ROCm 6.2\neager attention", fillcolor="#dbeafa"];
+  seed [label="seed.py / data/\nВакансии и PDF-резюме\nJSON / ReportLab", fillcolor="#f8f9fb"];
+  {rank=same; ui; seed;}
+  {rank=same; api; auth;}
+  {rank=same; service; documents;}
+  {rank=same; compute; store;}
+  {rank=same; semantic; llm;}
+  ui -> api -> service -> compute -> engine -> semantic [style=invis, weight=20];
+  seed -> auth -> documents -> store -> llm [style=invis, weight=20];
+  ui -> api [label="HTTP + Bearer"];
+  api -> auth [label="проверка запроса"];
+  api -> documents [label="PDF, не более 5 MiB"];
+  api -> service [label="создать / остановить\nутвердить"];
+  api -> store [label="доступные записи"];
+  service -> store [label="состояние + аудит"];
+  service -> compute [label="разрешенный снимок"];
+  compute -> engine [label="вызов screen"];
+  seed -> store [label="команда seed"];
+  engine -> semantic [label="тексты без команд"];
+  compute -> llm [label="сводка фактов"];
+  semantic -> gpu;
+  llm -> gpu;
+  auth -> store [label="сессия", style=dashed];
+}

@@ -1,0 +1,13 @@
+{
+  "child_exit_code": 17,
+  "status_at_crash": "running",
+  "checkpoint_stage": 2,
+  "status_after_recovery": "created",
+  "final_status": "waiting",
+  "candidates": 8,
+  "recovery_seconds": 0.05961133097298443,
+  "backup_restore_seconds": 0.00926470902049914,
+  "audit_valid_after_restore": true,
+  "result_preserved": true,
+  "passed": true
+}

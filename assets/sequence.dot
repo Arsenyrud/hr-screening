@@ -1,0 +1,18 @@
+digraph flow {
+  graph [rankdir=TB, bgcolor="white", pad=.3, nodesep=.4, ranksep=.35];
+  node [shape=box, style="rounded,filled", fontname="DejaVu Sans", fontsize=12, fillcolor="#f2f6fb", color="#7893b7", margin=".15,.11"];
+  edge [fontname="DejaVu Sans", fontsize=10, color="#56769d"];
+  a [label="1 Рекрутер\nВакансия, проект, лимиты, Idempotency-Key"];
+  b [label="2 API + security\nПроверка роли, tenant и project"];
+  c [label="3 service + store\nУстойчивая задача, initializing, ready, running"];
+  d [label="4 broker чтения\nСнимок разрешенных резюме и аудит IDs"];
+  e [label="5 engine + semantic\nНавыки, отрицания, опыт, цитаты, дубли, ранжирование"];
+  f [label="6 llm на GPU\nЧерновая подсказка по сводке фактов, проверка JSON"];
+  g [label="7 store\nАртефакт и checkpoint, статус waiting"];
+  h [label="8 Рекрутер\nПроверяет источники и выбирает кандидатов"];
+  i [label="9 API + store, одна транзакция\nУтвержденный список, автор и аудит, completed"];
+  j [label="10 Клиент\nТолько утвержденные карточки своего проекта"];
+  a -> b -> c -> d -> e -> f -> g -> h -> i -> j;
+  fail [label="Отказ / тайм-аут / отмена\nerror или destroyed + аудит\nПауза сохраняет checkpoint", fillcolor="#fff4e5", color="#c59d61"];
+  c -> fail [style=dashed]; e -> fail [style=dashed];
+}

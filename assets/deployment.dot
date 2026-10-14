@@ -1,0 +1,18 @@
+digraph platform {
+  graph [rankdir=TB, bgcolor="white", pad=.3, nodesep=.4, ranksep=.55];
+  node [shape=box, style="rounded,filled", fontname="DejaVu Sans", fontsize=12, fillcolor="#f2f6fb", color="#7893b7", margin=".18,.13"];
+  edge [fontname="DejaVu Sans", fontsize=10, color="#56769d"];
+  ingress [label="Вход организации\nTLS / OIDC / reverse proxy"];
+  api [label="Управляющий контур\nAPI replicas / RBAC-ABAC / policy"];
+  orchestration [label="Контур выполнения\nОркестратор / очередь / broker / sandbox"];
+  models [label="Вычислительный контур\nEmbedding service / LLM service / GPU queue"];
+  storage [label="Контур состояния\nPostgreSQL / pgvector / object storage / backups"];
+  observe [label="Контур эксплуатации\nPrometheus / logs / append-only audit / alerts"];
+  ingress -> api;
+  api -> orchestration;
+  orchestration -> models;
+  api -> storage; orchestration -> storage;
+  api -> observe; orchestration -> observe; models -> observe;
+  note [label="Целевая схема для роста\nВ пилоте API и оркестратор живут в одном процессе,\nPostgreSQL заменен SQLite WAL", color="white", fillcolor="white"];
+  observe -> note [style=invis];
+}

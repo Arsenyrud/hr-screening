@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-15",
+  "method": "Browser interaction against local HTTP service; download responses checked in server log",
+  "data": "Synthetic fixtures only",
+  "viewports": [
+    "Default desktop",
+    "390x844"
+  ],
+  "checks": [
+    {
+      "name": "Simple login and recruiter navigation",
+      "passed": true
+    },
+    {
+      "name": "Candidate evidence and interview question tabs",
+      "passed": true
+    },
+    {
+      "name": "Nested immutable source snapshot and back navigation",
+      "passed": true
+    },
+    {
+      "name": "Selection survives source navigation, drawer close and viewport change",
+      "passed": true
+    },
+    {
+      "name": "PDF chooser, PDF/text switch preserves file, multipart upload and extracted text",
+      "passed": true
+    },
+    {
+      "name": "PDF and CSV requests through interface return HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "Manual approval changes synthetic task status and marks selected candidate",
+      "passed": true
+    },
+    {
+      "name": "Mobile list and task navigation; document clientWidth and scrollWidth both 376px",
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Saved browser download files not inspected",
+    "Mobile navigation and width checked through DOM; mobile screenshot capture unavailable"
+  ]
+}

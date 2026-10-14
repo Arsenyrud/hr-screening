@@ -1,0 +1,131 @@
+{
+  "mode": "baseline",
+  "repeats_per_vacancy": 5,
+  "dataset_sha256": "d3c6d8ec6c2b8733886976b442e0575d2d8830ff2dfc094a0e6467aa0ddf01c9",
+  "resumes": 32,
+  "vacancies": 3,
+  "hardware": {
+    "os": "Linux",
+    "kernel": "7.0.0-38-generic",
+    "cpu": "AMD Ryzen 9 5950X 16-Core Processor",
+    "cpu_count": 32,
+    "ram_bytes": 134953562112,
+    "python": "3.12.7",
+    "torch": "2.6.0+rocm6.2.4",
+    "rocm": "6.2.41134-65d174c3e",
+    "gpu": "AMD Radeon RX 6900 XT",
+    "vram_bytes": 17163091968
+  },
+  "cold_seconds": 0.006713711016345769,
+  "warm_seconds": [
+    0.004422640020493418,
+    0.004422430996783078,
+    0.0043954590219073,
+    0.0043636389891617,
+    0.004889579024165869,
+    0.004322698980104178,
+    0.0039438410312868655,
+    0.0038486600387841463,
+    0.00419399602105841,
+    0.004007992974948138,
+    0.0039864020072855055,
+    0.0035674850223585963,
+    0.0035990249598398805,
+    0.003588314983062446,
+    0.0035769250243902206
+  ],
+  "p50_seconds": 0.004007992974948138,
+  "p95_seconds": 0.004422640020493418,
+  "p99_seconds": 0.004422640020493418,
+  "evaluations": [
+    {
+      "vacancy_id": "v-python",
+      "selected": [
+        "r01",
+        "r11",
+        "r02",
+        "r03",
+        "r04",
+        "r07",
+        "r10",
+        "r05"
+      ],
+      "relevant": [
+        "r01",
+        "r02",
+        "r03",
+        "r04",
+        "r11"
+      ],
+      "precision_at_k": 0.625,
+      "recall_at_k": 1.0,
+      "model": {
+        "mode": "baseline",
+        "name": "evidence-screening-v3",
+        "sha256": "13c69380ac5128a9cfc76904987f7c635a4bec6c3f5b3344642dd88471a02153",
+        "scoring": "must 75%, nice 15%, experience 10%; absent criteria redistribute to skills",
+        "protected_attributes_used": false
+      }
+    },
+    {
+      "vacancy_id": "v-analyst",
+      "selected": [
+        "r12",
+        "r13",
+        "r14",
+        "r15",
+        "r17",
+        "r19",
+        "r20",
+        "r16"
+      ],
+      "relevant": [
+        "r12",
+        "r13",
+        "r14",
+        "r15"
+      ],
+      "precision_at_k": 0.5,
+      "recall_at_k": 1.0,
+      "model": {
+        "mode": "baseline",
+        "name": "evidence-screening-v3",
+        "sha256": "13c69380ac5128a9cfc76904987f7c635a4bec6c3f5b3344642dd88471a02153",
+        "scoring": "must 75%, nice 15%, experience 10%; absent criteria redistribute to skills",
+        "protected_attributes_used": false
+      }
+    },
+    {
+      "vacancy_id": "v-frontend",
+      "selected": [
+        "r22",
+        "r23",
+        "r24",
+        "r25",
+        "r27",
+        "r30",
+        "r28",
+        "r26"
+      ],
+      "relevant": [
+        "r22",
+        "r23",
+        "r24",
+        "r25"
+      ],
+      "precision_at_k": 0.5,
+      "recall_at_k": 1.0,
+      "model": {
+        "mode": "baseline",
+        "name": "evidence-screening-v3",
+        "sha256": "13c69380ac5128a9cfc76904987f7c635a4bec6c3f5b3344642dd88471a02153",
+        "scoring": "must 75%, nice 15%, experience 10%; absent criteria redistribute to skills",
+        "protected_attributes_used": false
+      }
+    }
+  ],
+  "limitations": [
+    "Synthetic hand-authored labels, not an independent hiring quality study",
+    "No ATS integration or production SLA inferred"
+  ]
+}

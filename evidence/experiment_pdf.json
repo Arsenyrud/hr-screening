@@ -1,0 +1,347 @@
+{
+  "format": "text-layer PDF",
+  "parser": "pypdf 5.6.0, isolated subprocess",
+  "dataset_sha256": "d3c6d8ec6c2b8733886976b442e0575d2d8830ff2dfc094a0e6467aa0ddf01c9",
+  "documents": [
+    {
+      "resume_id": "r01",
+      "filename": "r01.pdf",
+      "seconds": 0.08514045597985387,
+      "pages": 1,
+      "text_chars": 455,
+      "sha256": "5d819d49c00faae19f8b40d44c9cde97a0743f2f92a2315a27bb439d647024f6",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r02",
+      "filename": "r02.pdf",
+      "seconds": 0.08339977404102683,
+      "pages": 1,
+      "text_chars": 435,
+      "sha256": "c57c350ad73f0dd19bd7e1ac217fc03a2c84e5971f534f09eab2a4c754fb5bbc",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r03",
+      "filename": "r03.pdf",
+      "seconds": 0.07983599696308374,
+      "pages": 1,
+      "text_chars": 422,
+      "sha256": "c06db5059d73d0fb422fa7b0ac80e76b12ad8e3a0e58cd107ea72a3cf9779181",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r04",
+      "filename": "r04.pdf",
+      "seconds": 0.08048128895461559,
+      "pages": 1,
+      "text_chars": 453,
+      "sha256": "98bfeef00eb0a9f8d8aad2146ba29aec356f4a92a052cf2d3072c99af09fd650",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r05",
+      "filename": "r05.pdf",
+      "seconds": 0.08333838201360777,
+      "pages": 1,
+      "text_chars": 393,
+      "sha256": "851445134eaef8159863f2f00ab7ff3de53a8266b1d3685e9aab4090f7de4a9c",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r06",
+      "filename": "r06.pdf",
+      "seconds": 0.0798036660416983,
+      "pages": 1,
+      "text_chars": 397,
+      "sha256": "c8a14114e6a32b009b74ae72065afbc884f1ab3eb1383f7c522e2e5bd62ab213",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r07",
+      "filename": "r07.pdf",
+      "seconds": 0.07911103300284594,
+      "pages": 1,
+      "text_chars": 417,
+      "sha256": "e16e7eb8df403515dfdc1705ad3501b35ef0783d5390cf3bd16bec55fcad5cca",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r08",
+      "filename": "r08.pdf",
+      "seconds": 0.08040458796313033,
+      "pages": 1,
+      "text_chars": 424,
+      "sha256": "0973174b2b69307a0db9d5d514c387166165eef3ed4bbe15819bc40ea6b62862",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r09",
+      "filename": "r09.pdf",
+      "seconds": 0.08256498799892142,
+      "pages": 1,
+      "text_chars": 445,
+      "sha256": "30031329d7d444a006d085e9a01e5d54519308070e0a475461170db4913639ab",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r10",
+      "filename": "r10.pdf",
+      "seconds": 0.08346390502993017,
+      "pages": 1,
+      "text_chars": 388,
+      "sha256": "ec7e7306149888332298454bed0e46f5548728c8c3bce8eb7c9ff200f6010bc6",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r11",
+      "filename": "r11.pdf",
+      "seconds": 0.08571435697376728,
+      "pages": 1,
+      "text_chars": 455,
+      "sha256": "ad43878cee8aec13ab8f8a6e093317dae1c40237592c4bef756724b0fdb9ad63",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r12",
+      "filename": "r12.pdf",
+      "seconds": 0.08260146901011467,
+      "pages": 1,
+      "text_chars": 425,
+      "sha256": "fba0729a8d8b5ccaf2dcca9d1b2b3c05b24c63e05323a29008d6cd09c282afce",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r13",
+      "filename": "r13.pdf",
+      "seconds": 0.08728838595561683,
+      "pages": 1,
+      "text_chars": 436,
+      "sha256": "ea484a6642f20778d0a27442c95c2c7f2f923537118c0ad91bddfd52f500d30a",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r14",
+      "filename": "r14.pdf",
+      "seconds": 0.08643488999223337,
+      "pages": 1,
+      "text_chars": 405,
+      "sha256": "040568563524bc630ed4323268d05eb888791e30fef48eedc2d789e01bf83bcb",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r15",
+      "filename": "r15.pdf",
+      "seconds": 0.08537750103278086,
+      "pages": 1,
+      "text_chars": 424,
+      "sha256": "32970eb4b16cf1475bd71a9078d84cc65549d84baa1741a81be442431e37790b",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r16",
+      "filename": "r16.pdf",
+      "seconds": 0.08249599701957777,
+      "pages": 1,
+      "text_chars": 407,
+      "sha256": "0ab66100c3517a361f8edeb0e1cb693dd67ee8f8e8be128af3f516bb60a49460",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r17",
+      "filename": "r17.pdf",
+      "seconds": 0.0876438120030798,
+      "pages": 1,
+      "text_chars": 409,
+      "sha256": "85ef916bb0679c970ce8984713458a4bf8c2e07848273b555fe82cd2b6b89927",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r18",
+      "filename": "r18.pdf",
+      "seconds": 0.08363268797984347,
+      "pages": 1,
+      "text_chars": 386,
+      "sha256": "3a447b04693a7d437788dc99bee16f1075983ffe029c8efc765e7641b604763c",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r19",
+      "filename": "r19.pdf",
+      "seconds": 0.08082001603906974,
+      "pages": 1,
+      "text_chars": 417,
+      "sha256": "7b91eb88b6120af3c6e4fb5a600df40f8ff3b0ffdc31dbac3147492adfe2241d",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r20",
+      "filename": "r20.pdf",
+      "seconds": 0.08289937401423231,
+      "pages": 1,
+      "text_chars": 395,
+      "sha256": "61318aecac1478e645231adf7b80883b078ab80ae1664a19fd13102347540209",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r21",
+      "filename": "r21.pdf",
+      "seconds": 0.08192212600260973,
+      "pages": 1,
+      "text_chars": 409,
+      "sha256": "40ce17a01f00a41c696fb3d8be82ce516c1bd09bf00446d55ff0bf869a7fd9f4",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r22",
+      "filename": "r22.pdf",
+      "seconds": 0.08104975998867303,
+      "pages": 1,
+      "text_chars": 427,
+      "sha256": "9c5e1c35d24402884e62d804c933bf68502c0ca1451a85fe4ecea0d0fded74a3",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r23",
+      "filename": "r23.pdf",
+      "seconds": 0.08341471402673051,
+      "pages": 1,
+      "text_chars": 416,
+      "sha256": "663308f041674856f50af1224de8cef2fe0773a64b7a2f10c346128a3e2541da",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r24",
+      "filename": "r24.pdf",
+      "seconds": 0.08056571095949039,
+      "pages": 1,
+      "text_chars": 400,
+      "sha256": "4bd24759f7984332b6d1982895ab304967f21122b1136e43db5cc17807dab0b7",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r25",
+      "filename": "r25.pdf",
+      "seconds": 0.08081884501734748,
+      "pages": 1,
+      "text_chars": 415,
+      "sha256": "bb2146160351bd3685a1f94031a54423f096364b73ca19033806195cf15d7d1b",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r26",
+      "filename": "r26.pdf",
+      "seconds": 0.08170955197419971,
+      "pages": 1,
+      "text_chars": 398,
+      "sha256": "a3f9d39409916f12bf24ec0daab1a99681fda0e5d485fed80eb8d763c71d1df4",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r27",
+      "filename": "r27.pdf",
+      "seconds": 0.08078829501755536,
+      "pages": 1,
+      "text_chars": 381,
+      "sha256": "cf04643526a16df0b61626f0d5b222e24bf15e7b0bc693437e52e7f25c73668c",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r28",
+      "filename": "r28.pdf",
+      "seconds": 0.08239811501698568,
+      "pages": 1,
+      "text_chars": 373,
+      "sha256": "ebfd4e7608160d1fc55845237a4676a493db26ecd203675dce11bc91ce7a5489",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r29",
+      "filename": "r29.pdf",
+      "seconds": 0.08474560896866024,
+      "pages": 1,
+      "text_chars": 382,
+      "sha256": "d2c26e003bd189bb213b27ffed45f26a1e99557a8d4cb4d062d703b7b425620c",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r30",
+      "filename": "r30.pdf",
+      "seconds": 0.08264026901451871,
+      "pages": 1,
+      "text_chars": 403,
+      "sha256": "13d15b66dab7470b8689dc15982db9b3b14ef989db175952279acc190ba5b20d",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r31",
+      "filename": "r31.pdf",
+      "seconds": 0.0844265419873409,
+      "pages": 1,
+      "text_chars": 398,
+      "sha256": "dda4555cdcb3c1c7e583db209b689b2bdf457cfa271738b9a7a6d307f83042d2",
+      "manifest_matches": true
+    },
+    {
+      "resume_id": "r32",
+      "filename": "r32.pdf",
+      "seconds": 0.08286702400073409,
+      "pages": 1,
+      "text_chars": 376,
+      "sha256": "776072bc18a02937b63266e37b774d9861fba1dbb3ecb11abc02bb2d0537ab86",
+      "manifest_matches": true
+    }
+  ],
+  "comparisons": [
+    {
+      "vacancy_id": "v-python",
+      "candidate_ids": [
+        "r01",
+        "r11",
+        "r02",
+        "r03",
+        "r04",
+        "r07",
+        "r10",
+        "r05"
+      ],
+      "professional_features_unchanged": true,
+      "quotes_in_extracted_text": true
+    },
+    {
+      "vacancy_id": "v-analyst",
+      "candidate_ids": [
+        "r12",
+        "r13",
+        "r14",
+        "r15",
+        "r17",
+        "r19",
+        "r20",
+        "r16"
+      ],
+      "professional_features_unchanged": true,
+      "quotes_in_extracted_text": true
+    },
+    {
+      "vacancy_id": "v-frontend",
+      "candidate_ids": [
+        "r22",
+        "r23",
+        "r24",
+        "r25",
+        "r27",
+        "r30",
+        "r28",
+        "r26"
+      ],
+      "professional_features_unchanged": true,
+      "quotes_in_extracted_text": true
+    }
+  ],
+  "all_valid": true,
+  "limitations": [
+    "Synthetic PDFs generated from the same fixtures",
+    "No OCR or independent recruitment quality claim"
+  ]
+}

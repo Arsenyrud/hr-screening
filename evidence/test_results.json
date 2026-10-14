@@ -1,0 +1,487 @@
+{
+  "tests": 96,
+  "passed": 96,
+  "failures": 0,
+  "cases": [
+    {
+      "name": "test_auth_and_project_isolation",
+      "seconds": 0.463,
+      "passed": true
+    },
+    {
+      "name": "test_client_cannot_read_drafts_or_resume_bank",
+      "seconds": 0.455,
+      "passed": true
+    },
+    {
+      "name": "test_second_tenant_recruiter_can_use_own_vacancy",
+      "seconds": 0.441,
+      "passed": true
+    },
+    {
+      "name": "test_task_lifecycle_idempotency_and_approval",
+      "seconds": 0.607,
+      "passed": true
+    },
+    {
+      "name": "test_cancellation_and_candidate_quota",
+      "seconds": 0.483,
+      "passed": true
+    },
+    {
+      "name": "test_admin_and_auditor_have_no_resume_access",
+      "seconds": 0.642,
+      "passed": true
+    },
+    {
+      "name": "test_recovery_preserves_checkpoint",
+      "seconds": 0.39,
+      "passed": true
+    },
+    {
+      "name": "test_audit_detects_tampering",
+      "seconds": 0.39,
+      "passed": true
+    },
+    {
+      "name": "test_execute_returns_evidence_and_process_metadata",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_pool_runs_in_separate_process_and_reuses_worker",
+      "seconds": 0.103,
+      "passed": true
+    },
+    {
+      "name": "test_closed_pool_rejects_new_jobs",
+      "seconds": 0.037,
+      "passed": true
+    },
+    {
+      "name": "test_shared_event_cancels_work_before_execution",
+      "seconds": 0.08,
+      "passed": true
+    },
+    {
+      "name": "test_future_exposes_shared_cancellation_event",
+      "seconds": 0.082,
+      "passed": true
+    },
+    {
+      "name": "test_pdf_extracts_text_with_original_identity",
+      "seconds": 0.078,
+      "passed": true
+    },
+    {
+      "name": "test_invalid_empty_encrypted_and_page_quota_are_explicit[<html>not a PDF</html>-PDF]",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_invalid_empty_encrypted_and_page_quota_are_explicit[%PDF-1.7\\ninvalid-\\u043f\\u043e\\u0432\\u0440\\u0435\\u0436\\u0434\\u0435\\u043d]",
+      "seconds": 0.077,
+      "passed": true
+    },
+    {
+      "name": "test_invalid_empty_encrypted_and_page_quota_are_explicit[%PDF-1.3\\n%\\xe2\\xe3\\xcf\\xd3\\n1 0 obj\\n<<\\n/Producer (pypdf)\\n>>\\nendobj\\n2 0 obj\\n<<\\n/Type /Pages\\n/Count 1\\n/Kids [ 4 0 R ]\\n>>\\nendobj\\n3 0 obj\\n<<\\n/Type /Catalog\\n/Pages 2 0 R\\n>>\\nendobj\\n4 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n>>\\nendobj\\nxref\\n0 5\\n0000000000 65535 f \\n0000000015 00000 n \\n0000000054 00000 n \\n0000000113 00000 n \\n0000000162 00000 n \\ntrailer\\n<<\\n/Size 5\\n/Root 3 0 R\\n/Info 1 0 R\\n>>\\nstartxref\\n256\\n%%EOF\\n-\\u0442\\u0435\\u043a\\u0441\\u0442]",
+      "seconds": 0.078,
+      "passed": true
+    },
+    {
+      "name": "test_invalid_empty_encrypted_and_page_quota_are_explicit[%PDF-1.3\\n%\\xe2\\xe3\\xcf\\xd3\\n1 0 obj\\n<<\\n/Producer (pypdf)\\n>>\\nendobj\\n2 0 obj\\n<<\\n/Type /Pages\\n/Count 1\\n/Kids [ 4 0 R ]\\n>>\\nendobj\\n3 0 obj\\n<<\\n/Type /Catalog\\n/Pages 2 0 R\\n>>\\nendobj\\n4 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/XObject <<\\n/Im0 5 0 R\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 6 0 R\\n>>\\nendobj\\n5 0 obj\\n<<\\n/Type /XObject\\n/Subtype /Image\\n/ColorSpace /DeviceRGB\\n/Width 1\\n/Height 1\\n/BitsPerComponent 8\\n/Length 3\\n>>\\nstream\\n\\x80\\x80\\x80\\nendstream\\nendobj\\n6 0 obj\\n<<\\n/Length 33\\n>>\\nstream\\nq 100 0 0 100 50 700 cm /Im0 Do Q\\nendstream\\nendobj\\nxref\\n0 7\\n0000000000 65535 f \\n0000000015 00000 n \\n0000000054 00000 n \\n0000000113 00000 n \\n0000000162 00000 n \\n0000000298 00000 n \\n0000000443 00000 n \\ntrailer\\n<<\\n/Size 7\\n/Root 3 0 R\\n/Info 1 0 R\\n>>\\nstartxref\\n526\\n%%EOF\\n-\\u0441\\u043a\\u0430\\u043d]",
+      "seconds": 0.08,
+      "passed": true
+    },
+    {
+      "name": "test_invalid_empty_encrypted_and_page_quota_are_explicit[%PDF-1.3\\n%\\xe2\\xe3\\xcf\\xd3\\n1 0 obj\\n<<\\n/Producer (pypdf)\\n>>\\nendobj\\n2 0 obj\\n<<\\n/Type /Pages\\n/Count 0\\n/Kids [ ]\\n>>\\nendobj\\n3 0 obj\\n<<\\n/Type /Catalog\\n/Pages 2 0 R\\n>>\\nendobj\\nxref\\n0 4\\n0000000000 65535 f \\n0000000015 00000 n \\n0000000054 00000 n \\n0000000107 00000 n \\ntrailer\\n<<\\n/Size 4\\n/Root 3 0 R\\n/Info 1 0 R\\n>>\\nstartxref\\n156\\n%%EOF\\n-\\u0441\\u0442\\u0440\\u0430\\u043d\\u0438\\u0446]",
+      "seconds": 0.08,
+      "passed": true
+    },
+    {
+      "name": "test_invalid_empty_encrypted_and_page_quota_are_explicit[%PDF-1.3\\n%\\xe2\\xe3\\xcf\\xd3\\n1 0 obj\\n<<\\n/Producer <4972deff50>\\n>>\\nendobj\\n2 0 obj\\n<<\\n/Type /Pages\\n/Count 1\\n/Kids [ 4 0 R ]\\n>>\\nendobj\\n3 0 obj\\n<<\\n/Type /Catalog\\n/Pages 2 0 R\\n>>\\nendobj\\n4 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 5 0 R\\n>>\\nendobj\\n5 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\n\\xb7\\x8a\\x1a\\xdb\\xabf\\x9e\\xcf\\xc2\\xce}9\\x0b\\x1d2\\xbc\\xb6\\xd1\\xde4\\x80}\\t\\x7fg1\\x96\\xc1\\xb1\\x14\\x1a\\xb8\\xe0v\\xca(K\\xdc\\xc8X*\\xac>1\\x92F\\xdf\\x07\\xbdN85\\xca\\x0c\\xe8\\xe7t\\x04X\\x9eRP\\x9b\\x03{DtK\\xdd\\x0f\\x95L'\\xdc\\xe8\\x92\\xea\\xff0-\\xf8H\\xaae\"\\x1b\\x1b\\x19\\xd7^?\\x80\\nendstream\\nendobj\\n6 0 obj\\n<<\\n/V 2\\n/R 3\\n/Length 128\\n/P 4294967292\\n/Filter /Standard\\n/O <e094beb464bdfb2944eb31d5f6845f05a009de043e174204c0ec17937674f42e>\\n/U <a7b8e1e01426d835e002f5fd5329013928bf4e5e4e758a4164004e56fffa0108>\\n>>\\nendobj\\nxref\\n0 7\\n0000000000 65535 f \\n0000000015 00000 n \\n0000000059 00000 n \\n0000000118 00000 n \\n0000000167 00000 n \\n0000000348 00000 n \\n0000000490 00000 n \\ntrailer\\n<<\\n/Size 7\\n/Root 3 0 R\\n/Info 1 0 R\\n/ID [ <6564323239383731336662613661326263393936366138383931653130613034> <6564323239383731336662613661326263393936366138383931653130613034> ]\\n/Encrypt 6 0 R\\n>>\\nstartxref\\n705\\n%%EOF\\n-\\u0437\\u0430\\u0448\\u0438\\u0444\\u0440\\u043e\\u0432\\u0430\\u043d]",
+      "seconds": 0.081,
+      "passed": true
+    },
+    {
+      "name": "test_invalid_empty_encrypted_and_page_quota_are_explicit[%PDF-1.3\\n%\\xe2\\xe3\\xcf\\xd3\\n1 0 obj\\n<<\\n/Producer (pypdf)\\n>>\\nendobj\\n2 0 obj\\n<<\\n/Type /Pages\\n/Count 21\\n/Kids [ 4 0 R 6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R 18 0 R 20 0 R 22 0 R 24 0 R 26 0 R 28 0 R 30 0 R 32 0 R 34 0 R 36 0 R 38 0 R 40 0 R 42 0 R 44 0 R ]\\n>>\\nendobj\\n3 0 obj\\n<<\\n/Type /Catalog\\n/Pages 2 0 R\\n>>\\nendobj\\n4 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 5 0 R\\n>>\\nendobj\\n5 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n6 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 7 0 R\\n>>\\nendobj\\n7 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n8 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 9 0 R\\n>>\\nendobj\\n9 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n10 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 11 0 R\\n>>\\nendobj\\n11 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n12 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 13 0 R\\n>>\\nendobj\\n13 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n14 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 15 0 R\\n>>\\nendobj\\n15 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n16 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 17 0 R\\n>>\\nendobj\\n17 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n18 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 19 0 R\\n>>\\nendobj\\n19 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n20 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 21 0 R\\n>>\\nendobj\\n21 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n22 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 23 0 R\\n>>\\nendobj\\n23 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n24 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 25 0 R\\n>>\\nendobj\\n25 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n26 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 27 0 R\\n>>\\nendobj\\n27 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n28 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 29 0 R\\n>>\\nendobj\\n29 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n30 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 31 0 R\\n>>\\nendobj\\n31 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n32 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 33 0 R\\n>>\\nendobj\\n33 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n34 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 35 0 R\\n>>\\nendobj\\n35 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n36 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 37 0 R\\n>>\\nendobj\\n37 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n38 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 39 0 R\\n>>\\nendobj\\n39 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n40 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 41 0 R\\n>>\\nendobj\\n41 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n42 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 43 0 R\\n>>\\nendobj\\n43 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n44 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 45 0 R\\n>>\\nendobj\\n45 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\nxref\\n0 46\\n0000000000 65535 f \\n0000000015 00000 n \\n0000000054 00000 n \\n0000000252 00000 n \\n0000000301 00000 n \\n0000000482 00000 n \\n0000000624 00000 n \\n0000000805 00000 n \\n0000000947 00000 n \\n0000001128 00000 n \\n0000001270 00000 n \\n0000001453 00000 n \\n0000001596 00000 n \\n0000001779 00000 n \\n0000001922 00000 n \\n0000002105 00000 n \\n0000002248 00000 n \\n0000002431 00000 n \\n0000002574 00000 n \\n0000002757 00000 n \\n0000002900 00000 n \\n0000003083 00000 n \\n0000003226 00000 n \\n0000003409 00000 n \\n0000003552 00000 n \\n0000003735 00000 n \\n0000003878 00000 n \\n0000004061 00000 n \\n0000004204 00000 n \\n0000004387 00000 n \\n0000004530 00000 n \\n0000004713 00000 n \\n0000004856 00000 n \\n0000005039 00000 n \\n0000005182 00000 n \\n0000005365 00000 n \\n0000005508 00000 n \\n0000005691 00000 n \\n0000005834 00000 n \\n0000006017 00000 n \\n0000006160 00000 n \\n0000006343 00000 n \\n0000006486 00000 n \\n0000006669 00000 n \\n0000006812 00000 n \\n0000006995 00000 n \\ntrailer\\n<<\\n/Size 46\\n/Root 3 0 R\\n/Info 1 0 R\\n>>\\nstartxref\\n7138\\n%%EOF\\n-20]",
+      "seconds": 0.077,
+      "passed": true
+    },
+    {
+      "name": "test_pdf_byte_and_text_quotas_reject_before_import",
+      "seconds": 0.095,
+      "passed": true
+    },
+    {
+      "name": "test_parser_timeout_becomes_explicit_validation_error",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_busy_parser_does_not_spawn_another_process",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_aliases_and_requirement_normalization_rank_supported_candidate_first",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_empty_lists_extract_sectioned_skill_aliases_and_minimum_experience",
+      "seconds": 0.004,
+      "passed": true
+    },
+    {
+      "name": "test_explicit_skill_lists_and_experience_override_description",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_ambiguous_or_unsectioned_description_does_not_invent_mandatory_requirements[\\u0422\\u0440\\u0435\\u0431\\u043e\\u0432\\u0430\\u043d\\u0438\\u044f: Python \\u0438\\u043b\\u0438 Java; \\u043e\\u043f\\u044b\\u0442 \\u043e\\u0442 2 \\u0434\\u043e 5 \\u043b\\u0435\\u0442; \\u0443\\u043c\\u0435\\u043d\\u0438\\u0435 \\u0434\\u043e\\u0433\\u043e\\u0432\\u0430\\u0440\\u0438\\u0432\\u0430\\u0442\\u044c\\u0441\\u044f.]",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_ambiguous_or_unsectioned_description_does_not_invent_mandatory_requirements[\\u041a\\u043e\\u043c\\u0430\\u043d\\u0434\\u0430 \\u0440\\u0430\\u0437\\u0440\\u0430\\u0431\\u0430\\u0442\\u044b\\u0432\\u0430\\u0435\\u0442 \\u0441\\u0435\\u0440\\u0432\\u0438\\u0441 \\u043d\\u0430 Python \\u0438 PostgreSQL, \\u0438\\u0449\\u0435\\u0442 \\u043d\\u043e\\u0432\\u043e\\u0433\\u043e \\u043a\\u043e\\u043b\\u043b\\u0435\\u0433\\u0443.]",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_ambiguous_or_unsectioned_description_does_not_invent_mandatory_requirements[\\u0416\\u0435\\u043b\\u0430\\u0442\\u0435\\u043b\\u044c\\u043d\\u043e: \\u043e\\u043f\\u044b\\u0442 \\u043e\\u0442 5 \\u043b\\u0435\\u0442 \\u0438 Docker.]",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_every_match_has_verbatim_quote_and_resume_id",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_fully_matched_candidate_has_professional_questions_for_confirmed_must_skills",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_interview_questions_are_bounded_and_keep_confirmed_skill_question",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_negated_skills_are_missing[\\u041d\\u0435 \\u0440\\u0430\\u0431\\u043e\\u0442\\u0430\\u043b \\u0441 Python \\u0438 PostgreSQL.]",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_negated_skills_are_missing[Python \\u043d\\u0435 \\u0437\\u043d\\u0430\\u044e. \\u041d\\u0435\\u0442 \\u043e\\u043f\\u044b\\u0442\\u0430 \\u0441 PostgreSQL.]",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_negated_skills_are_missing[No experience with Python or PostgreSQL.]",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_negated_skills_are_missing[Python: \\u043d\\u0435\\u0442 \\u043e\\u043f\\u044b\\u0442\\u0430; PostgreSQL: \\u043d\\u0435 \\u0438\\u0441\\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u043b.]",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_positive_and_negative_claim_conflict_is_not_silently_accepted",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_negation_applies_to_its_own_skill_clause",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_negative_list_keeps_shared_negation_across_commas",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_supported_years_cannot_be_invented_from_protected_attribute",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_study_dates_do_not_become_professional_experience",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_other_teams_skills_do_not_become_candidates_skills",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_missing_experience_stays_unknown_and_generates_question",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_overlap_of_work_intervals_not_double_counted",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_identity_and_text_duplicates_are_reported_without_merging",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_instructions_are_inert_and_do_not_create_skill_evidence",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_protected_attributes_and_identity_do_not_change_score",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_personal_clause_does_not_erase_professional_fact[\\u0420\\u0430\\u0431\\u043e\\u0442\\u0430\\u043b \\u0441 Python, \\u0432\\u043e\\u0437\\u0440\\u0430\\u0441\\u0442: 35 \\u043b\\u0435\\u0442.]",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_personal_clause_does_not_erase_professional_fact[\\u0420\\u0430\\u0431\\u043e\\u0442\\u0430\\u043b \\u0441 Python; \\u043f\\u043e\\u043b: \\u043c\\u0443\\u0436\\u0441\\u043a\\u043e\\u0439.]",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_personal_clause_does_not_erase_professional_fact[\\u0412\\u043e\\u0437\\u0440\\u0430\\u0441\\u044235\\u043b\\u0435\\u0442, \\u0440\\u0430\\u0431\\u043e\\u0442\\u0430\\u043b \\u0441 Python.]",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_personal_clause_does_not_erase_professional_fact[Worked with Python, age: 35 years old.]",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_personal_clause_does_not_erase_professional_fact[Worked with Python; gender: female.]",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_age_is_excluded_while_explicit_work_duration_is_preserved[\\u0412\\u043e\\u0437\\u0440\\u0430\\u0441\\u044235\\u043b\\u0435\\u0442, \\u0440\\u0430\\u0431\\u043e\\u0442\\u0430\\u043b \\u0441 Python 3 \\u0433\\u043e\\u0434\\u0430.]",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_age_is_excluded_while_explicit_work_duration_is_preserved[Age: 35 years old, worked with Python for 3 years.]",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_negated_work_duration_does_not_become_experience",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_protected_criteria_are_excluded_even_if_vacancy_requests_them",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_engine_filters_scope_if_vacancy_has_scope_and_does_not_mutate_input",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_scores_are_bounded_and_top_k_is_applied_after_sorting",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_explicit_missing_local_model_falls_back_without_network",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_demo_data_has_diverse_scoped_resumes_and_real_labels",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_draft_validation_rejects_arbitrary_fields_and_unknown_candidates",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_enrichment_keeps_score_evidence_and_original_questions_immutable",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_invalid_generation_is_visible_and_leaves_candidates_untouched",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_cancel_before_inference_returns_no_draft",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_missing_model_directory_is_rejected_without_downloading",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_prompt_contains_only_confirmed_facts_not_resume_quotes",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_generation_is_limited_to_two_candidates_and_records_actual_usage",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_pdf_import_download_and_backup_preserve_original_bytes",
+      "seconds": 0.545,
+      "passed": true
+    },
+    {
+      "name": "test_pdf_import_and_read_enforce_role_tenant_project_acl",
+      "seconds": 0.763,
+      "passed": true
+    },
+    {
+      "name": "test_invalid_pdf_does_not_create_resume_or_attachment[not a PDF]",
+      "seconds": 0.446,
+      "passed": true
+    },
+    {
+      "name": "test_invalid_pdf_does_not_create_resume_or_attachment[%PDF-1.7\\nbroken]",
+      "seconds": 0.518,
+      "passed": true
+    },
+    {
+      "name": "test_invalid_pdf_does_not_create_resume_or_attachment[%PDF-1.3\\n%\\xe2\\xe3\\xcf\\xd3\\n1 0 obj\\n<<\\n/Producer (pypdf)\\n>>\\nendobj\\n2 0 obj\\n<<\\n/Type /Pages\\n/Count 1\\n/Kids [ 4 0 R ]\\n>>\\nendobj\\n3 0 obj\\n<<\\n/Type /Catalog\\n/Pages 2 0 R\\n>>\\nendobj\\n4 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n>>\\nendobj\\nxref\\n0 5\\n0000000000 65535 f \\n0000000015 00000 n \\n0000000054 00000 n \\n0000000113 00000 n \\n0000000162 00000 n \\ntrailer\\n<<\\n/Size 5\\n/Root 3 0 R\\n/Info 1 0 R\\n>>\\nstartxref\\n256\\n%%EOF\\n]",
+      "seconds": 0.518,
+      "passed": true
+    },
+    {
+      "name": "test_invalid_pdf_does_not_create_resume_or_attachment[%PDF-1.3\\n%\\xe2\\xe3\\xcf\\xd3\\n1 0 obj\\n<<\\n/Producer (pypdf)\\n>>\\nendobj\\n2 0 obj\\n<<\\n/Type /Pages\\n/Count 1\\n/Kids [ 4 0 R ]\\n>>\\nendobj\\n3 0 obj\\n<<\\n/Type /Catalog\\n/Pages 2 0 R\\n>>\\nendobj\\n4 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/XObject <<\\n/Im0 5 0 R\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 6 0 R\\n>>\\nendobj\\n5 0 obj\\n<<\\n/Type /XObject\\n/Subtype /Image\\n/ColorSpace /DeviceRGB\\n/Width 1\\n/Height 1\\n/BitsPerComponent 8\\n/Length 3\\n>>\\nstream\\n\\x80\\x80\\x80\\nendstream\\nendobj\\n6 0 obj\\n<<\\n/Length 33\\n>>\\nstream\\nq 100 0 0 100 50 700 cm /Im0 Do Q\\nendstream\\nendobj\\nxref\\n0 7\\n0000000000 65535 f \\n0000000015 00000 n \\n0000000054 00000 n \\n0000000113 00000 n \\n0000000162 00000 n \\n0000000298 00000 n \\n0000000443 00000 n \\ntrailer\\n<<\\n/Size 7\\n/Root 3 0 R\\n/Info 1 0 R\\n>>\\nstartxref\\n526\\n%%EOF\\n]",
+      "seconds": 0.51,
+      "passed": true
+    },
+    {
+      "name": "test_invalid_pdf_does_not_create_resume_or_attachment[%PDF-1.3\\n%\\xe2\\xe3\\xcf\\xd3\\n1 0 obj\\n<<\\n/Producer <4972deff50>\\n>>\\nendobj\\n2 0 obj\\n<<\\n/Type /Pages\\n/Count 1\\n/Kids [ 4 0 R ]\\n>>\\nendobj\\n3 0 obj\\n<<\\n/Type /Catalog\\n/Pages 2 0 R\\n>>\\nendobj\\n4 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 5 0 R\\n>>\\nendobj\\n5 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\n\\xb7\\x8a\\x1a\\xdb\\xabf\\x9e\\xcf\\xc2\\xce}9\\x0b\\x1d2\\xbc\\xb6\\xd1\\xde4\\x80}\\t\\x7fg1\\x96\\xc1\\xb1\\x14\\x1a\\xb8\\xe0v\\xca(K\\xdc\\xc8X*\\xac>1\\x92F\\xdf\\x07\\xbdN85\\xca\\x0c\\xe8\\xe7t\\x04X\\x9eRP\\x9b\\x03{DtK\\xdd\\x0f\\x95L'\\xdc\\xe8\\x92\\xea\\xff0-\\xf8H\\xaae\"\\x1b\\x1b\\x19\\xd7^?\\x80\\nendstream\\nendobj\\n6 0 obj\\n<<\\n/V 2\\n/R 3\\n/Length 128\\n/P 4294967292\\n/Filter /Standard\\n/O <e094beb464bdfb2944eb31d5f6845f05a009de043e174204c0ec17937674f42e>\\n/U <a7b8e1e01426d835e002f5fd5329013928bf4e5e4e758a4164004e56fffa0108>\\n>>\\nendobj\\nxref\\n0 7\\n0000000000 65535 f \\n0000000015 00000 n \\n0000000059 00000 n \\n0000000118 00000 n \\n0000000167 00000 n \\n0000000348 00000 n \\n0000000490 00000 n \\ntrailer\\n<<\\n/Size 7\\n/Root 3 0 R\\n/Info 1 0 R\\n/ID [ <6564323239383731336662613661326263393936366138383931653130613034> <6564323239383731336662613661326263393936366138383931653130613034> ]\\n/Encrypt 6 0 R\\n>>\\nstartxref\\n705\\n%%EOF\\n]",
+      "seconds": 0.518,
+      "passed": true
+    },
+    {
+      "name": "test_invalid_pdf_does_not_create_resume_or_attachment[%PDF-1.3\\n%\\xe2\\xe3\\xcf\\xd3\\n1 0 obj\\n<<\\n/Producer (pypdf)\\n>>\\nendobj\\n2 0 obj\\n<<\\n/Type /Pages\\n/Count 21\\n/Kids [ 4 0 R 6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R 18 0 R 20 0 R 22 0 R 24 0 R 26 0 R 28 0 R 30 0 R 32 0 R 34 0 R 36 0 R 38 0 R 40 0 R 42 0 R 44 0 R ]\\n>>\\nendobj\\n3 0 obj\\n<<\\n/Type /Catalog\\n/Pages 2 0 R\\n>>\\nendobj\\n4 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 5 0 R\\n>>\\nendobj\\n5 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n6 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 7 0 R\\n>>\\nendobj\\n7 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n8 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 9 0 R\\n>>\\nendobj\\n9 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n10 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 11 0 R\\n>>\\nendobj\\n11 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n12 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 13 0 R\\n>>\\nendobj\\n13 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n14 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 15 0 R\\n>>\\nendobj\\n15 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n16 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 17 0 R\\n>>\\nendobj\\n17 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n18 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 19 0 R\\n>>\\nendobj\\n19 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n20 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 21 0 R\\n>>\\nendobj\\n21 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n22 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 23 0 R\\n>>\\nendobj\\n23 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n24 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 25 0 R\\n>>\\nendobj\\n25 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n26 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 27 0 R\\n>>\\nendobj\\n27 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n28 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 29 0 R\\n>>\\nendobj\\n29 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n30 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 31 0 R\\n>>\\nendobj\\n31 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n32 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 33 0 R\\n>>\\nendobj\\n33 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n34 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 35 0 R\\n>>\\nendobj\\n35 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n36 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 37 0 R\\n>>\\nendobj\\n37 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n38 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 39 0 R\\n>>\\nendobj\\n39 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n40 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 41 0 R\\n>>\\nendobj\\n41 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n42 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 43 0 R\\n>>\\nendobj\\n43 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\n44 0 obj\\n<<\\n/Type /Page\\n/Resources <<\\n/Font <<\\n/F1 <<\\n/Type /Font\\n/Subtype /Type1\\n/BaseFont /Helvetica\\n>>\\n>>\\n>>\\n/MediaBox [ 0.0 0.0 595 842 ]\\n/Parent 2 0 R\\n/Contents 45 0 R\\n>>\\nendobj\\n45 0 obj\\n<<\\n/Length 92\\n>>\\nstream\\nBT /F1 12 Tf 50 750 Td (Python developer. PostgreSQL and Docker. Experience: 5 years.) Tj ET\\nendstream\\nendobj\\nxref\\n0 46\\n0000000000 65535 f \\n0000000015 00000 n \\n0000000054 00000 n \\n0000000252 00000 n \\n0000000301 00000 n \\n0000000482 00000 n \\n0000000624 00000 n \\n0000000805 00000 n \\n0000000947 00000 n \\n0000001128 00000 n \\n0000001270 00000 n \\n0000001453 00000 n \\n0000001596 00000 n \\n0000001779 00000 n \\n0000001922 00000 n \\n0000002105 00000 n \\n0000002248 00000 n \\n0000002431 00000 n \\n0000002574 00000 n \\n0000002757 00000 n \\n0000002900 00000 n \\n0000003083 00000 n \\n0000003226 00000 n \\n0000003409 00000 n \\n0000003552 00000 n \\n0000003735 00000 n \\n0000003878 00000 n \\n0000004061 00000 n \\n0000004204 00000 n \\n0000004387 00000 n \\n0000004530 00000 n \\n0000004713 00000 n \\n0000004856 00000 n \\n0000005039 00000 n \\n0000005182 00000 n \\n0000005365 00000 n \\n0000005508 00000 n \\n0000005691 00000 n \\n0000005834 00000 n \\n0000006017 00000 n \\n0000006160 00000 n \\n0000006343 00000 n \\n0000006486 00000 n \\n0000006669 00000 n \\n0000006812 00000 n \\n0000006995 00000 n \\ntrailer\\n<<\\n/Size 46\\n/Root 3 0 R\\n/Info 1 0 R\\n>>\\nstartxref\\n7138\\n%%EOF\\n]",
+      "seconds": 0.52,
+      "passed": true
+    },
+    {
+      "name": "test_pdf_fields_and_names_are_validated",
+      "seconds": 0.438,
+      "passed": true
+    },
+    {
+      "name": "test_broken_multipart_is_a_validation_error",
+      "seconds": 0.44,
+      "passed": true
+    },
+    {
+      "name": "test_busy_pdf_parser_returns_retryable_error_without_import",
+      "seconds": 0.449,
+      "passed": true
+    },
+    {
+      "name": "test_pdf_file_and_request_body_limits_apply_before_multipart_parse",
+      "seconds": 0.478,
+      "passed": true
+    },
+    {
+      "name": "test_pdf_import_rolls_back_when_audit_fails",
+      "seconds": 0.531,
+      "passed": true
+    },
+    {
+      "name": "test_empty_query_returns_zeros_without_loading_or_encoding",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_only_empty_documents_return_zeros_without_encoding_query",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_mixed_empty_documents_keep_nonempty_similarity_and_original_indices",
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "name": "test_late_result_cannot_overwrite_cancellation",
+      "seconds": 0.504,
+      "passed": true
+    },
+    {
+      "name": "test_tool_budget_and_timeout",
+      "seconds": 0.417,
+      "passed": true
+    },
+    {
+      "name": "test_backup_restores_task_and_audit",
+      "seconds": 0.414,
+      "passed": true
+    },
+    {
+      "name": "test_large_resume_snapshot_is_separate_from_task_status",
+      "seconds": 0.461,
+      "passed": true
+    },
+    {
+      "name": "test_admin_cancellation_records_actual_role",
+      "seconds": 0.499,
+      "passed": true
+    },
+    {
+      "name": "test_approval_rolls_back_when_audit_write_fails",
+      "seconds": 0.471,
+      "passed": true
+    },
+    {
+      "name": "test_error_cannot_overwrite_concurrent_cancel",
+      "seconds": 0.459,
+      "passed": true
+    },
+    {
+      "name": "test_pause_resume_does_not_reset_compute_budget",
+      "seconds": 0.698,
+      "passed": true
+    },
+    {
+      "name": "test_csv_neutralizes_formulas_and_client_export_uses_approved_subset",
+      "seconds": 0.519,
+      "passed": true
+    },
+    {
+      "name": "test_task_source_returns_immutable_input_after_current_resume_changes",
+      "seconds": 0.531,
+      "passed": true
+    },
+    {
+      "name": "test_task_source_rejects_foreign_task_unknown_input_and_missing_snapshot",
+      "seconds": 0.615,
+      "passed": true
+    },
+    {
+      "name": "test_task_source_is_available_only_to_recruiter",
+      "seconds": 0.722,
+      "passed": true
+    }
+  ]
+}

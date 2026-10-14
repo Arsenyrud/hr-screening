@@ -1,0 +1,17 @@
+{
+  "command": "node --test tests/ui_session.test.cjs",
+  "node": "v22.23.1",
+  "tests": 11,
+  "passed": 11,
+  "failures": 0,
+  "coverage": [
+    "Late PDF import across account switch",
+    "Source cache and task snapshot across account switch",
+    "Old and current HTTP 401 responses",
+    "Late download errors",
+    "Task action completion and busy state"
+  ],
+  "limitations": [
+    "Isolated Node VM with DOM stubs; browser checks recorded separately"
+  ]
+}

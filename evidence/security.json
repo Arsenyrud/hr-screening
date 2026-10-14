@@ -1,0 +1,60 @@
+{
+  "checks": [
+    {
+      "name": "unauthenticated_resume_read",
+      "observed": 401,
+      "expected": 401,
+      "passed": true
+    },
+    {
+      "name": "client_resume_read",
+      "observed": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "auditor_resume_read",
+      "observed": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "foreign_project_write",
+      "observed": 403,
+      "expected": 403,
+      "passed": true
+    },
+    {
+      "name": "foreign_tenant_task",
+      "observed": 404,
+      "expected": 404,
+      "passed": true
+    },
+    {
+      "name": "draft_hidden_from_client",
+      "observed": 404,
+      "expected": 404,
+      "passed": true
+    },
+    {
+      "name": "prompt_injection_is_inert",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "audit_chain",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "denied_operations_audited",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "scope": "API RBAC/project/tenant, inert text, audit; no OS network isolation claim"
+}

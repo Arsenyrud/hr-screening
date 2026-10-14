@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+tmp/
+models/
+runtime/
+*.sqlite*
+.env
+assets/*.png
